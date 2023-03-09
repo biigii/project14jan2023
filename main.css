@@ -6,7 +6,6 @@
 html,
 body {
   height: 100%;
-  padding: 10px
 }
 
 button {
@@ -18,4 +17,16 @@ input[type='text'] {
   width: 300px;
   height: 40px;
   margin: 10px 0;
+}
+
+
+.ball {
+  width: 100px;
+  height: 100px;
+  background-color: #f33;
+  border-radius: 50%;
+  /* position: absolute; */
+  /* top: 200px */
+  /* top: 200 WRONG*/
+  transition: transform 1000ms ease-out;
 }
