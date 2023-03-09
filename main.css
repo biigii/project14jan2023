@@ -8,42 +8,49 @@ body {
   height: 100%;
 }
 
-figure {
-  height: 100%;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row {
   display: grid;
-  grid-template-columns: repeat(3, 200px);
-  grid-template-rows: repeat(3, 200px);
-  gap: 10px;
-  place-content: center;
-  grid-auto-rows: 200px;
+  gap: 20px;
+  grid-template-columns: repeat(12, 1fr);
 }
 
-figure img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  cursor: pointer;
+.col-6 {
+  grid-column: span 6;
 }
 
-figure img:first-child {
+.col-4 {
+  grid-column: span 4;
+}
+
+.col-2 {
   grid-column: span 2;
 }
 
-figure img:nth-child(2) {
-  grid-row: span 2
+.col-10 {
+  grid-column: span 10;
 }
 
-figure img:nth-child(4) {
-  grid-column: span 2;
-  grid-row: 3 /5
+.col-11 {
+  grid-column: span 11;
 }
 
-figure img:last-of-type {
-  grid-column: span 2;
+.col-12 {
+  grid-column: span 12;
 }
 
-img:hover {
-  opacity: 0.75;
-  border: 2px solid #f11
+.col-3 {
+  grid-column: span 3;
+}
+
+.col-5 {
+  grid-column: span 5;
+}
+
+.col-7 {
+  grid-column: span 7;
 }
